@@ -1,27 +1,29 @@
 {
-  "name": "lord-commander",
+  "name": "maester",
   "version": "0.0.0",
   "private": true,
   "author": "Madsn <m@madsn.net>",
-  "description": "Lord Commander of Castle Blackish",
+  "description": "Grand maester Aemon Targaryen of Castle Blackish",
   "dependencies": {
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.1",
-    "hubot-fb": "^5.0.0",
     "hubot-google-images": "^0.2.6",
     "hubot-google-translate": "^0.2.0",
     "hubot-help": "^0.2.0",
     "hubot-maps": "0.0.2",
+    "hubot-messenger": "^1.1.3",
     "hubot-pugme": "^0.1.0",
     "hubot-rules": "^0.1.1",
     "hubot-shell": "^1.0.2",
-    "hubot-shipit": "^0.2.0"
+    "hubot-shipit": "^0.2.0",
+    "nightmare": "^2.7.0"
   },
   "engines": {
     "node": ">= 0.8.x",
-    "npm":  ">= 1.1.x"
+    "npm": ">= 1.1.x"
   },
   "scripts": {
-    "start": "%cd%/bin/hubot -a fb"
+    "start:shell": "%cd%/bin/hubot -a shell",
+    "start": "%cd%/bin/hubot -a messenger"
   }
 }

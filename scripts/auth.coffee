@@ -30,7 +30,8 @@ module.exports = (robot) ->
 
   class Auth
     hasRole: (name, role) ->
-      user = robot.brain.userForName(name)
+      console.log "checking role for user: " + name
+      user = robot.brain.userForName("#{name}")
       if user? and user.roles?
         if role in user.roles then return true
 
